@@ -245,14 +245,21 @@ section img {
   background-repeat: no-repeat;
 }
 
+.phones {
+  position: relative;
+  top: 100px;
+  left: 0;
+}
 
 .mainPhone {
   position: relative;
+  top: -75px;
+  left: -20px;
   z-index: 10;
 }
 
 .innerPhone {
-  display: none;
+  position: absolute;
 }
 
 /* #animation {
