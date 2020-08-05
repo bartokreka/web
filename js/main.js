@@ -48,18 +48,19 @@ $('.multiple-items').slick({
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close");
+// // Get the <span> element that closes the modal
+// var CloseButton = document.getElementsByClassName("close");
 
-// When the user clicks on the button, open the modal
-window.onload = function popup() {
-    modal.style.display = "block";
-}
+// var SendButton = document.getElementsByClassName("send");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-    modal.style.display = "none";
-}
+
+// // When the user clicks on <span> (x), close the modal
+// CloseButton.onclick = function () {
+//         modal.style.display = "none";
+// }
+// SendButton.onclick = function () {
+//         modal.style.display = "none";
+// }
 
 window.onclick = function (event) {
     if (event.target == modal) {
@@ -67,26 +68,26 @@ window.onclick = function (event) {
     }
 }
 
-$(function () {
-    // Init Controller
-    var scrollMagicController = new ScrollMagic();
+// $(function () {
+//     // Init Controller
+//     var scrollMagicController = new ScrollMagic();
 
-    // Create Animation for 0.5s
-    var tween = TweenMax.to('#animation', 0.5, {
-        display: "inline - block",
-        position: "relative",
-        "z-index": "-1",
-        border: "5px solid red"
-    });
-    // Create the Scene and trigger when visible with ScrollMagic
-    var scene = new ScrollScene({
-        triggerElement: '#scene',
-        offset: 400
-    })
-    .setTween(tween)
-    .addTo(scrollMagicController);
-    scene.addIndicators();
-}); 
+//     // Create Animation for 0.5s
+//     var tween = TweenMax.to('#animation', 0.5, {
+//         display: "inline - block",
+//         position: "relative",
+//         "z-index": "-1",
+//         border: "5px solid red"
+//     });
+//     // Create the Scene and trigger when visible with ScrollMagic
+//     var scene = new ScrollScene({
+//         triggerElement: '#scene',
+//         offset: 400
+//     })
+//     .setTween(tween)
+//     .addTo(scrollMagicController);
+//     scene.addIndicators();
+// }); 
 
 
 
