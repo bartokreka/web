@@ -96,6 +96,7 @@ body {
     margin: 0;
     justify-content: center;
     text-align: center;
+    box-sizing: border-box;
   }
 
   /* .cont {
@@ -259,8 +260,10 @@ section img {
 }
 
 .innerPhone {
-  position: absolute;
-}
+  position: absolute;   
+} 
+
+
 
 /* #animation {
   display: inline-block;

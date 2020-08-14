@@ -68,26 +68,16 @@ window.onclick = function (event) {
     }
 }
 
-// $(function () {
-//     // Init Controller
-//     var scrollMagicController = new ScrollMagic();
+// init controller
+var controller = new ScrollMagic.Controller();
 
-//     // Create Animation for 0.5s
-//     var tween = TweenMax.to('#animation', 0.5, {
-//         display: "inline - block",
-//         position: "relative",
-//         "z-index": "-1",
-//         border: "5px solid red"
-//     });
-//     // Create the Scene and trigger when visible with ScrollMagic
-//     var scene = new ScrollScene({
-//         triggerElement: '#scene',
-//         offset: 400
-//     })
-//     .setTween(tween)
-//     .addTo(scrollMagicController);
-//     scene.addIndicators();
-// }); 
+// create a scene
+new ScrollMagic.Scene({
+    duration: 700, // the scene should last for a scroll distance of 100px
+    offset: 400 // start this scene after scrolling for 400px
+})
+    .setPin('#container') // pins the element for the the scene's duration
+    .addTo(controller); // assign the scene to the controller
 
 
 
