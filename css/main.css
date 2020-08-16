@@ -246,6 +246,10 @@ section img {
   background-repeat: no-repeat;
 }
 
+.btn-invert:hover {
+  color: white;
+}
+
 .phones {
   position: relative;
   top: 100px;
@@ -259,17 +263,16 @@ section img {
   z-index: 10;
 }
 
-.innerPhone {
-  position: absolute;   
+.innerPhone1 {
+  position: absolute;  
+  top: 0px;
+  left: 406px; 
 } 
 
+.innerPhone2 {
+  display: none;
+}
 
-
-/* #animation {
-  display: inline-block;
-  position: relative;
-  z-index: -1;
-} */
 
 .panel h1 {
   color: white;
